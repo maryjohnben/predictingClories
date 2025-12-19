@@ -25,15 +25,9 @@ import {
   } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js ";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyC7Xr7jn8NYnWTk1mHf7GxoAMvJBq1oU_4",
-  authDomain: "caloriesgame-22141.firebaseapp.com",
-  projectId: "caloriesgame-22141",
-  storageBucket: "caloriesgame-22141.firebasestorage.app",
-  messagingSenderId: "1069259901872",
-  appId: "1:1069259901872:web:0e4dd84b7a32ec85e42475",
-  measurementId: "G-QCTCYZMD54"
-};
+// Import configuration from config.local.js (gitignored)
+// If config.local.js doesn't exist, copy config.example.js to config.local.js and fill in your values
+import { firebaseConfig } from './config.local.js';
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
